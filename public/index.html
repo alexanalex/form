@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Форма</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="form">
+			<form action="#" id="form" class="form__body">
+				<h1 class="form__title">Отправка данных</h1>
+				<div class="form__item">
+					<label for="formName" class="form__label">Имя*:</label>
+					<input type="text" id="formName" name="name" class="form__input _req">
+				</div>
+				<div class="form__item">
+					<label for="formEmail" class="form__label">E-mail*:</label>
+					<input type="text" id="formEmail" name="email" class="form__input _req _email">
+				</div>
+				<div class="form__item">
+					<div class="form__label">Левша или правша?</div>
+					<div class="options">
+						<div class="options__item">
+							<input type="radio" name="hand" id="formRightHanded" checked value="right"
+								class="options__input">
+							<label for="formRightHanded" class="options__label">Правша</label>
+						</div>
+						<div class="options__item">
+							<input type="radio" name="hand" id="formLeftHanded" value="left" class="options__input">
+							<label for="formLeftHanded" class="options__label">Левша</label>
+						</div>
+					</div>
+				</div>
+				<div class="form__item">
+					<label for="formMessage" class="form__label">Сообщение:</label>
+					<textarea name="message" id="formMessage" class="form__input"></textarea>
+				</div>
+				<div class="form__item">
+					<div class="form__label">Возраст:</div>
+					<select name="age" class="select">
+						<option value="от 18 до 25" selected>Молодой</option>
+						<option value="от 26 до 45">В возрасте</option>
+						<option value="от 46 до ...">Старый</option>
+					</select>
+				</div>
+				<div class="form__item">
+					<div class="form__label">Прикрепить фото</div>
+					<div class="file">
+						<div class="file__item">
+							<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+								class="file__input">
+							<button class="file__button">Выбрать</button>
+						</div>
+						<div id="formPreview" class="file__preview"></div>
+					</div>
+				</div>
+				<div class="form__item">
+					<div class="checkbox">
+						<input type="checkbox" name="agreement" checked id="formAgreement" class="checkbox__input _req">
+						<label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку
+								персональных
+								данных в соответствии с <a href="#">Условиями</a>*</span></label>
+					</div>
+				</div>
+				<button type="submit" class="form__button">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<!--Optional JavaScript-->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/myscript.js"></script>
+</body>
+
+</html>
